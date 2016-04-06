@@ -8,7 +8,7 @@
         <!--Months-->
         <scene sceneID="Pqh-jk-oa5">
             <objects>
-                <tableViewController title="Months" id="xrp-rZ-aAb" sceneMemberID="viewController">
+                <tableViewController title="Months" id="xrp-rZ-aAb" customClass="MonthsTableViewController" customModule="MyCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="avJ-yd-ep5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,7 @@
         <!--Days-->
         <scene sceneID="3yj-0k-MDK">
             <objects>
-                <tableViewController title="Days" id="EuB-GR-AmY" userLabel="Days" sceneMemberID="viewController">
+                <tableViewController title="Days" id="EuB-GR-AmY" userLabel="Days" customClass="DaysTableViewController" customModule="MyCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3RW-Ix-6IG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +71,7 @@
         <!--Single Day-->
         <scene sceneID="KSF-y9-qUY">
             <objects>
-                <tableViewController title="Single Day" id="sf6-8g-D0N" userLabel="Single Day" sceneMemberID="viewController">
+                <tableViewController title="Single Day" id="sf6-8g-D0N" userLabel="Single Day" customClass="SingleDayTableViewController" customModule="MyCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vwx-wf-X2o">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,7 +102,7 @@
         <!--Event-->
         <scene sceneID="SyV-3K-wPj">
             <objects>
-                <viewController id="npM-iz-y1o" userLabel="Event" sceneMemberID="viewController">
+                <viewController id="npM-iz-y1o" userLabel="Event" customClass="EventViewController" customModule="MyCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HTs-OQ-YoB"/>
                         <viewControllerLayoutGuide type="bottom" id="EHS-SQ-4zq"/>
