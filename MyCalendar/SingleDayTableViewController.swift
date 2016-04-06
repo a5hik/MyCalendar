@@ -11,4 +11,21 @@ import UIKit
 
 class SingleDayTableViewController : UITableViewController {
     
+    var events : [String] = Array()
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Basic")!
+        cell.textLabel?.text = events[indexPath.row]
+        return cell
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return events.count
+    }
+    
+    
 }
