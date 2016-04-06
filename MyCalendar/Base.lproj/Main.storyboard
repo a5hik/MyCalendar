@@ -94,6 +94,13 @@
                             <outlet property="delegate" destination="sf6-8g-D0N" id="33Z-tA-9jJ"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="a5X-dm-NbJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bI0-Wx-MH8">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="sf6-8g-D0N" id="vEm-s4-LN8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B8N-0J-txw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -16,6 +16,13 @@ class SingleDayTableViewController : UITableViewController {
     var monthNumber = -1
     var dayNumber = -1
     
+    @IBAction func addButtonPressed(sender: UIBarButtonItem) {
+        
+        let newEvent = "Test Event \(events.count + 1)"
+        events.append(newEvent)
+        tableView.reloadData()
+    }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
