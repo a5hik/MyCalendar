@@ -23,6 +23,20 @@ class SingleDayTableViewController : UITableViewController {
         tableView.reloadData()
     }
     
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if(editingStyle == UITableViewCellEditingStyle.Delete) {
+            events.removeAtIndex(indexPath.row)
+            
+            let sections = NSIndexSet(index: 0)
+            tableView.reloadSections(sections, withRowAnimation: .Fade)
+        }
+        
+    }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
