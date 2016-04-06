@@ -11,18 +11,21 @@ import UIKit
 
 class MonthsTableViewController : UITableViewController {
     
+    let monthsDataSet = ["January", "Feburary", "March", "April", "May",
+    "June", "July", "August", "September", "October", "November", "December"]
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Basic")!
-        cell.textLabel?.text = "Test"
+        cell.textLabel?.text = monthsDataSet[indexPath.row]
         return cell
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return monthsDataSet.count
     }
     
 }
