@@ -13,6 +13,9 @@ class SingleDayTableViewController : UITableViewController {
     
     var events : [String] = Array()
     
+    var monthNumber = -1
+    var dayNumber = -1
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -27,5 +30,7 @@ class SingleDayTableViewController : UITableViewController {
         return events.count
     }
     
-    
+    override func viewDidLoad() {
+        print ("\(monthNumber) - \(dayNumber)")
+    }
 }

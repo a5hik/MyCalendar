@@ -11,6 +11,8 @@ import UIKit
 
 class DaysTableViewController : UITableViewController {
     
+    var monthNumber = -1
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -23,6 +25,19 @@ class DaysTableViewController : UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Basic")!
         cell.textLabel?.text = "\(indexPath.row + 1)"
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "DaySegue") {
+            let selectedRow = tableView.indexPathForSelectedRow?.row
+            
+            if let dest = segue.destinationViewController as?
+                SingleDayTableViewController {
+                    dest.title = "\(selectedRow! + 1)"
+                    dest.monthNumber = monthNumber
+                    dest.dayNumber = selectedRow! + 1
+            }
+        }
     }
     
 }

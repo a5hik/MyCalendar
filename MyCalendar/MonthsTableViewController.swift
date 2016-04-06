@@ -28,4 +28,16 @@ class MonthsTableViewController : UITableViewController {
         return monthsDataSet.count
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "MonthSegue") {
+            let selectedRow = tableView.indexPathForSelectedRow?.row
+            
+            if let dest = segue.destinationViewController as?
+                DaysTableViewController {
+                    dest.title = monthsDataSet[selectedRow!]
+                    dest.monthNumber = selectedRow! + 1
+            }
+        }
+    }
+    
 }
