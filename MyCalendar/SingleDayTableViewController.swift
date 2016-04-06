@@ -1,5 +1,5 @@
 //
-//  DayTableViewController.swift
+//  SingleDayTableViewController.swift
 //  MyCalendar
 //
 //  Created by Muhammed Ashik on 06/04/16.
@@ -7,3 +7,8 @@
 //
 
 import Foundation
+import UIKit
+
+class SingleDayTableViewController : UITableViewController {
+    
+}
