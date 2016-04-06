@@ -22,7 +22,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="EuB-GR-AmY" kind="show" id="x6S-k2-fev"/>
+                                    <segue destination="EuB-GR-AmY" kind="show" identifier="MonthSegue" id="x6S-k2-fev"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -54,7 +54,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="sf6-8g-D0N" kind="show" id="YMj-vl-FqU"/>
+                                    <segue destination="sf6-8g-D0N" kind="show" identifier="DaySegue" id="YMj-vl-FqU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -85,7 +85,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="npM-iz-y1o" kind="show" id="EzN-Ri-k96"/>
+                                    <segue destination="npM-iz-y1o" kind="show" identifier="EventSegue" id="EzN-Ri-k96"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
